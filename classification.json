@@ -1,1 +1,312 @@
-{"id":"d4da9ea7-f84d-31c2-e6a7-4f223ba67612","name":"Nexosis Classification","description":"","order":["74d297f8-8abf-3b36-8014-c60aaae16e9c","cf986b42-43e2-f881-1efb-bb136f79c409","0032682b-7828-2272-2f9e-d33b9a17879b","5c4e6216-1134-8f5f-b00c-85c8a230acdd","527676cc-c267-2538-a8b4-038cb8b7f0b6","0cacb754-d3c0-83ba-3cb7-7e6f0c631232","c6e4ea57-3102-8ccc-992b-99a2aee7603c","898b5d29-0f75-4f5e-67b9-74d1dd62c49e","fdf53b10-1262-08b7-a71f-f94c0f458d07"],"folders":[],"folders_order":[],"timestamp":1512166067636,"owner":"2103024","public":false,"requests":[{"id":"0032682b-7828-2272-2f9e-d33b9a17879b","headers":"api-key: {{NEXOSIS_API_KEY}}\nContent-Type: text\/csv\n","headerData":[{"key":"api-key","value":"{{NEXOSIS_API_KEY}}","description":"","enabled":true},{"key":"Content-Type","value":"text\/csv","description":"","enabled":true}],"url":"https:\/\/ml.nexosis.com\/v1\/data\/iris","queryParams":[],"preRequestScript":null,"pathVariables":[],"pathVariableData":[],"method":"PUT","data":[],"dataMode":"raw","version":2,"tests":null,"currentHelper":"normal","helperAttributes":[],"time":1512168520169,"name":"Load Iris Data","description":"","collectionId":"d4da9ea7-f84d-31c2-e6a7-4f223ba67612","responses":[],"rawModeData":"iris,sepal_len,sepal_width,petal_len,petal_width\r\nsetosa,5.1,3.5,1.4,0.2\r\nsetosa,4.9,3,1.4,0.2\r\nsetosa,4.7,3.2,1.3,0.2\r\nsetosa,4.6,3.1,1.5,0.2\r\nsetosa,5,3.6,1.4,0.2\r\nsetosa,5.4,3.9,1.7,0.4\r\nsetosa,4.6,3.4,1.4,0.3\r\nsetosa,5,3.4,1.5,0.2\r\nsetosa,4.4,2.9,1.4,0.2\r\nsetosa,4.9,3.1,1.5,0.1\r\nsetosa,5.4,3.7,1.5,0.2\r\nsetosa,4.8,3.4,1.6,0.2\r\nsetosa,4.8,3,1.4,0.1\r\nsetosa,4.3,3,1.1,0.1\r\nsetosa,5.8,4,1.2,0.2\r\nsetosa,5.7,4.4,1.5,0.4\r\nsetosa,5.4,3.9,1.3,0.4\r\nsetosa,5.1,3.5,1.4,0.3\r\nsetosa,5.7,3.8,1.7,0.3\r\nsetosa,5.1,3.8,1.5,0.3\r\nsetosa,5.4,3.4,1.7,0.2\r\nsetosa,5.1,3.7,1.5,0.4\r\nsetosa,4.6,3.6,1,0.2\r\nsetosa,5.1,3.3,1.7,0.5\r\nsetosa,4.8,3.4,1.9,0.2\r\nsetosa,5,3,1.6,0.2\r\nsetosa,5,3.4,1.6,0.4\r\nsetosa,5.2,3.5,1.5,0.2\r\nsetosa,5.2,3.4,1.4,0.2\r\nsetosa,4.7,3.2,1.6,0.2\r\nsetosa,4.8,3.1,1.6,0.2\r\nsetosa,5.4,3.4,1.5,0.4\r\nsetosa,5.2,4.1,1.5,0.1\r\nsetosa,5.5,4.2,1.4,0.2\r\nsetosa,4.9,3.1,1.5,0.1\r\nsetosa,5,3.2,1.2,0.2\r\nsetosa,5.5,3.5,1.3,0.2\r\nsetosa,4.9,3.1,1.5,0.1\r\nsetosa,4.4,3,1.3,0.2\r\nsetosa,5.1,3.4,1.5,0.2\r\nsetosa,5,3.5,1.3,0.3\r\nsetosa,4.5,2.3,1.3,0.3\r\nsetosa,4.4,3.2,1.3,0.2\r\nsetosa,5,3.5,1.6,0.6\r\nsetosa,5.1,3.8,1.9,0.4\r\nsetosa,4.8,3,1.4,0.3\r\nsetosa,5.1,3.8,1.6,0.2\r\nsetosa,4.6,3.2,1.4,0.2\r\nsetosa,5.3,3.7,1.5,0.2\r\nsetosa,5,3.3,1.4,0.2\r\nversicolour,7,3.2,4.7,1.4\r\nversicolour,6.4,3.2,4.5,1.5\r\nversicolour,6.9,3.1,4.9,1.5\r\nversicolour,5.5,2.3,4,1.3\r\nversicolour,6.5,2.8,4.6,1.5\r\nversicolour,5.7,2.8,4.5,1.3\r\nversicolour,6.3,3.3,4.7,1.6\r\nversicolour,4.9,2.4,3.3,1\r\nversicolour,6.6,2.9,4.6,1.3\r\nversicolour,5.2,2.7,3.9,1.4\r\nversicolour,5,2,3.5,1\r\nversicolour,5.9,3,4.2,1.5\r\nversicolour,6,2.2,4,1\r\nversicolour,6.1,2.9,4.7,1.4\r\nversicolour,5.6,2.9,3.6,1.3\r\nversicolour,6.7,3.1,4.4,1.4\r\nversicolour,5.6,3,4.5,1.5\r\nversicolour,5.8,2.7,4.1,1\r\nversicolour,6.2,2.2,4.5,1.5\r\nversicolour,5.6,2.5,3.9,1.1\r\nversicolour,5.9,3.2,4.8,1.8\r\nversicolour,6.1,2.8,4,1.3\r\nversicolour,6.3,2.5,4.9,1.5\r\nversicolour,6.1,2.8,4.7,1.2\r\nversicolour,6.4,2.9,4.3,1.3\r\nversicolour,6.6,3,4.4,1.4\r\nversicolour,6.8,2.8,4.8,1.4\r\nversicolour,6.7,3,5,1.7\r\nversicolour,6,2.9,4.5,1.5\r\nversicolour,5.7,2.6,3.5,1\r\nversicolour,5.5,2.4,3.8,1.1\r\nversicolour,5.5,2.4,3.7,1\r\nversicolour,5.8,2.7,3.9,1.2\r\nversicolour,6,2.7,5.1,1.6\r\nversicolour,5.4,3,4.5,1.5\r\nversicolour,6,3.4,4.5,1.6\r\nversicolour,6.7,3.1,4.7,1.5\r\nversicolour,6.3,2.3,4.4,1.3\r\nversicolour,5.6,3,4.1,1.3\r\nversicolour,5.5,2.5,4,1.3\r\nversicolour,5.5,2.6,4.4,1.2\r\nversicolour,6.1,3,4.6,1.4\r\nversicolour,5.8,2.6,4,1.2\r\nversicolour,5,2.3,3.3,1\r\nversicolour,5.6,2.7,4.2,1.3\r\nversicolour,5.7,3,4.2,1.2\r\nversicolour,5.7,2.9,4.2,1.3\r\nversicolour,6.2,2.9,4.3,1.3\r\nversicolour,5.1,2.5,3,1.1\r\nversicolour,5.7,2.8,4.1,1.3\r\nvirginica,6.3,3.3,6,2.5\r\nvirginica,5.8,2.7,5.1,1.9\r\nvirginica,7.1,3,5.9,2.1\r\nvirginica,6.3,2.9,5.6,1.8\r\nvirginica,6.5,3,5.8,2.2\r\nvirginica,7.6,3,6.6,2.1\r\nvirginica,4.9,2.5,4.5,1.7\r\nvirginica,7.3,2.9,6.3,1.8\r\nvirginica,6.7,2.5,5.8,1.8\r\nvirginica,7.2,3.6,6.1,2.5\r\nvirginica,6.5,3.2,5.1,2\r\nvirginica,6.4,2.7,5.3,1.9\r\nvirginica,6.8,3,5.5,2.1\r\nvirginica,5.7,2.5,5,2\r\nvirginica,5.8,2.8,5.1,2.4\r\nvirginica,6.4,3.2,5.3,2.3\r\nvirginica,6.5,3,5.5,1.8\r\nvirginica,7.7,3.8,6.7,2.2\r\nvirginica,7.7,2.6,6.9,2.3\r\nvirginica,6,2.2,5,1.5\r\nvirginica,6.9,3.2,5.7,2.3\r\nvirginica,5.6,2.8,4.9,2\r\nvirginica,7.7,2.8,6.7,2\r\nvirginica,6.3,2.7,4.9,1.8\r\nvirginica,6.7,3.3,5.7,2.1\r\nvirginica,7.2,3.2,6,1.8\r\nvirginica,6.2,2.8,4.8,1.8\r\nvirginica,6.1,3,4.9,1.8\r\nvirginica,6.4,2.8,5.6,2.1\r\nvirginica,7.2,3,5.8,1.6\r\nvirginica,7.4,2.8,6.1,1.9\r\nvirginica,7.9,3.8,6.4,2\r\nvirginica,6.4,2.8,5.6,2.2\r\nvirginica,6.3,2.8,5.1,1.5\r\nvirginica,6.1,2.6,5.6,1.4\r\nvirginica,7.7,3,6.1,2.3\r\nvirginica,6.3,3.4,5.6,2.4\r\nvirginica,6.4,3.1,5.5,1.8\r\nvirginica,6,3,4.8,1.8\r\nvirginica,6.9,3.1,5.4,2.1\r\nvirginica,6.7,3.1,5.6,2.4\r\nvirginica,6.9,3.1,5.1,2.3\r\nvirginica,5.8,2.7,5.1,1.9\r\nvirginica,6.8,3.2,5.9,2.3\r\nvirginica,6.7,3.3,5.7,2.5\r\nvirginica,6.7,3,5.2,2.3\r\nvirginica,6.3,2.5,5,1.9\r\nvirginica,6.5,3,5.2,2\r\nvirginica,6.2,3.4,5.4,2.3\r\nvirginica,5.9,3,5.1,1.8\r\n"},{"id":"0cacb754-d3c0-83ba-3cb7-7e6f0c631232","headers":"api-key: {{NEXOSIS_API_KEY}}\nContent-Type: application\/json\n","headerData":[{"key":"api-key","value":"{{NEXOSIS_API_KEY}}","description":"","enabled":true},{"key":"Content-Type","value":"application\/json","description":"","enabled":true}],"url":"https:\/\/ml.nexosis.com\/v1\/sessions\/01601444-e76c-4d06-8566-d59020a1cc61\/results","queryParams":[],"preRequestScript":null,"pathVariables":[],"pathVariableData":[],"method":"GET","data":null,"dataMode":"params","version":2,"tests":null,"currentHelper":"normal","helperAttributes":[],"time":1512168578774,"name":"Session Results","description":"","collectionId":"d4da9ea7-f84d-31c2-e6a7-4f223ba67612","responses":[]},{"id":"527676cc-c267-2538-a8b4-038cb8b7f0b6","headers":"api-key: {{NEXOSIS_API_KEY}}\nContent-Type: application\/json\n","headerData":[{"key":"api-key","value":"{{NEXOSIS_API_KEY}}","description":"","enabled":true},{"key":"Content-Type","value":"application\/json","description":"","enabled":true}],"url":"https:\/\/ml.nexosis.com\/v1\/sessions\/01601444-e76c-4d06-8566-d59020a1cc61","queryParams":[],"preRequestScript":null,"pathVariables":[],"pathVariableData":[],"method":"GET","data":null,"dataMode":"params","version":2,"tests":null,"currentHelper":"normal","helperAttributes":[],"time":1512168561632,"name":"Session Status","description":"","collectionId":"d4da9ea7-f84d-31c2-e6a7-4f223ba67612","responses":[]},{"id":"5c4e6216-1134-8f5f-b00c-85c8a230acdd","headers":"api-key: {{NEXOSIS_API_KEY}}\nContent-Type: application\/json\n","headerData":[{"key":"api-key","value":"{{NEXOSIS_API_KEY}}","description":"","enabled":true},{"key":"Content-Type","value":"application\/json","description":"","enabled":true}],"url":"https:\/\/ml.nexosis.com\/v1\/sessions\/model","queryParams":[],"preRequestScript":null,"pathVariables":[],"pathVariableData":[],"method":"POST","data":[],"dataMode":"raw","version":2,"tests":null,"currentHelper":"normal","helperAttributes":[],"time":1512167903245,"name":"Create Classification Model","description":"","collectionId":"d4da9ea7-f84d-31c2-e6a7-4f223ba67612","responses":[],"rawModeData":"{\n  \"dataSourceName\": \"iris\",\n  \"predictionDomain\": \"classification\",\n  \"targetColumn\": \"iris\"\n}\n"},{"id":"74d297f8-8abf-3b36-8014-c60aaae16e9c","headers":"api-key: {{NEXOSIS_API_KEY}}\n","headerData":[{"key":"api-key","value":"{{NEXOSIS_API_KEY}}","description":"","enabled":true}],"url":"https:\/\/ml.nexosis.com\/v1\/data\/iris","queryParams":[],"preRequestScript":null,"pathVariables":[],"pathVariableData":[],"method":"GET","data":null,"dataMode":"params","version":2,"tests":null,"currentHelper":"normal","helperAttributes":[],"time":1512167104451,"name":"Get Iris Data","description":null,"collectionId":"d4da9ea7-f84d-31c2-e6a7-4f223ba67612"},{"id":"898b5d29-0f75-4f5e-67b9-74d1dd62c49e","headers":"api-key: {{NEXOSIS_API_KEY}}\nContent-Type: application\/json\n","headerData":[{"key":"api-key","value":"{{NEXOSIS_API_KEY}}","description":"","enabled":true},{"key":"Content-Type","value":"application\/json","description":"","enabled":true}],"url":"https:\/\/ml.nexosis.com\/v1\/models\/1fa65880-451b-429c-a4f0-25c6a1545c88","queryParams":[],"preRequestScript":null,"pathVariables":[],"pathVariableData":[],"method":"GET","data":null,"dataMode":"params","version":2,"tests":null,"currentHelper":"normal","helperAttributes":[],"time":1512168711116,"name":"Get Model","description":"","collectionId":"d4da9ea7-f84d-31c2-e6a7-4f223ba67612","responses":[]},{"id":"c6e4ea57-3102-8ccc-992b-99a2aee7603c","headers":"api-key: {{NEXOSIS_API_KEY}}\nContent-Type: application\/json\n","headerData":[{"key":"api-key","value":"{{NEXOSIS_API_KEY}}","description":"","enabled":true},{"key":"Content-Type","value":"application\/json","description":"","enabled":true}],"url":"https:\/\/ml.nexosis.com\/v1\/sessions\/01601444-e76c-4d06-8566-d59020a1cc61\/results\/confusionmatrix","queryParams":[],"preRequestScript":null,"pathVariables":[],"pathVariableData":[],"method":"GET","data":null,"dataMode":"params","version":2,"tests":null,"currentHelper":"normal","helperAttributes":[],"time":1512168585997,"name":"Confusion Matrix","description":"","collectionId":"d4da9ea7-f84d-31c2-e6a7-4f223ba67612","responses":[]},{"id":"cf986b42-43e2-f881-1efb-bb136f79c409","headers":"api-key: {{NEXOSIS_API_KEY}}\n","headerData":[{"key":"api-key","value":"{{NEXOSIS_API_KEY}}","description":"","enabled":true}],"url":"https:\/\/ml.nexosis.com\/v1\/data\/iris","queryParams":[],"preRequestScript":null,"pathVariables":[],"pathVariableData":[],"method":"DELETE","data":null,"dataMode":"params","version":2,"tests":null,"currentHelper":"normal","helperAttributes":[],"time":1512167112399,"name":"Clear Iris Data","description":null,"collectionId":"d4da9ea7-f84d-31c2-e6a7-4f223ba67612"},{"id":"fdf53b10-1262-08b7-a71f-f94c0f458d07","headers":"api-key: {{NEXOSIS_API_KEY}}\nContent-Type: application\/json\n","headerData":[{"key":"api-key","value":"{{NEXOSIS_API_KEY}}","description":"","enabled":true},{"key":"Content-Type","value":"application\/json","description":"","enabled":true}],"url":"https:\/\/ml.nexosis.com\/v1\/models\/1fa65880-451b-429c-a4f0-25c6a1545c88\/predict","queryParams":[],"preRequestScript":null,"pathVariables":[],"pathVariableData":[],"method":"POST","data":[],"dataMode":"raw","version":2,"tests":null,"currentHelper":"normal","helperAttributes":[],"time":1512168728201,"name":"Predict","description":"","collectionId":"d4da9ea7-f84d-31c2-e6a7-4f223ba67612","responses":[],"rawModeData":"{ \n  \"data\": [{\n\t\"sepal_len\": \"5.1\",\n\t\"sepal_width\": \"3.5\",\n\t\"petal_len\": \"1.4\",\n\t\"petal_width\": \"0.2\"\n  }]\n}"}]}
+{
+	"info": {
+		"name": "Nexosis Classification",
+		"_postman_id": "d4da9ea7-f84d-31c2-e6a7-4f223ba67612",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Iris Data",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "api-key",
+						"value": "{{NEXOSIS_API_KEY}}"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://ml.nexosis.com/v1/data/iris",
+					"protocol": "https",
+					"host": [
+						"ml",
+						"nexosis",
+						"com"
+					],
+					"path": [
+						"v1",
+						"data",
+						"iris"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "Clear Iris Data",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "api-key",
+						"value": "{{NEXOSIS_API_KEY}}"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://ml.nexosis.com/v1/data/iris",
+					"protocol": "https",
+					"host": [
+						"ml",
+						"nexosis",
+						"com"
+					],
+					"path": [
+						"v1",
+						"data",
+						"iris"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "Load Iris Data",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "api-key",
+						"value": "{{NEXOSIS_API_KEY}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "text/csv"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "iris,sepal_len,sepal_width,petal_len,petal_width\r\nsetosa,5.1,3.5,1.4,0.2\r\nsetosa,4.9,3,1.4,0.2\r\nsetosa,4.7,3.2,1.3,0.2\r\nsetosa,4.6,3.1,1.5,0.2\r\nsetosa,5,3.6,1.4,0.2\r\nsetosa,5.4,3.9,1.7,0.4\r\nsetosa,4.6,3.4,1.4,0.3\r\nsetosa,5,3.4,1.5,0.2\r\nsetosa,4.4,2.9,1.4,0.2\r\nsetosa,4.9,3.1,1.5,0.1\r\nsetosa,5.4,3.7,1.5,0.2\r\nsetosa,4.8,3.4,1.6,0.2\r\nsetosa,4.8,3,1.4,0.1\r\nsetosa,4.3,3,1.1,0.1\r\nsetosa,5.8,4,1.2,0.2\r\nsetosa,5.7,4.4,1.5,0.4\r\nsetosa,5.4,3.9,1.3,0.4\r\nsetosa,5.1,3.5,1.4,0.3\r\nsetosa,5.7,3.8,1.7,0.3\r\nsetosa,5.1,3.8,1.5,0.3\r\nsetosa,5.4,3.4,1.7,0.2\r\nsetosa,5.1,3.7,1.5,0.4\r\nsetosa,4.6,3.6,1,0.2\r\nsetosa,5.1,3.3,1.7,0.5\r\nsetosa,4.8,3.4,1.9,0.2\r\nsetosa,5,3,1.6,0.2\r\nsetosa,5,3.4,1.6,0.4\r\nsetosa,5.2,3.5,1.5,0.2\r\nsetosa,5.2,3.4,1.4,0.2\r\nsetosa,4.7,3.2,1.6,0.2\r\nsetosa,4.8,3.1,1.6,0.2\r\nsetosa,5.4,3.4,1.5,0.4\r\nsetosa,5.2,4.1,1.5,0.1\r\nsetosa,5.5,4.2,1.4,0.2\r\nsetosa,4.9,3.1,1.5,0.1\r\nsetosa,5,3.2,1.2,0.2\r\nsetosa,5.5,3.5,1.3,0.2\r\nsetosa,4.9,3.1,1.5,0.1\r\nsetosa,4.4,3,1.3,0.2\r\nsetosa,5.1,3.4,1.5,0.2\r\nsetosa,5,3.5,1.3,0.3\r\nsetosa,4.5,2.3,1.3,0.3\r\nsetosa,4.4,3.2,1.3,0.2\r\nsetosa,5,3.5,1.6,0.6\r\nsetosa,5.1,3.8,1.9,0.4\r\nsetosa,4.8,3,1.4,0.3\r\nsetosa,5.1,3.8,1.6,0.2\r\nsetosa,4.6,3.2,1.4,0.2\r\nsetosa,5.3,3.7,1.5,0.2\r\nsetosa,5,3.3,1.4,0.2\r\nversicolour,7,3.2,4.7,1.4\r\nversicolour,6.4,3.2,4.5,1.5\r\nversicolour,6.9,3.1,4.9,1.5\r\nversicolour,5.5,2.3,4,1.3\r\nversicolour,6.5,2.8,4.6,1.5\r\nversicolour,5.7,2.8,4.5,1.3\r\nversicolour,6.3,3.3,4.7,1.6\r\nversicolour,4.9,2.4,3.3,1\r\nversicolour,6.6,2.9,4.6,1.3\r\nversicolour,5.2,2.7,3.9,1.4\r\nversicolour,5,2,3.5,1\r\nversicolour,5.9,3,4.2,1.5\r\nversicolour,6,2.2,4,1\r\nversicolour,6.1,2.9,4.7,1.4\r\nversicolour,5.6,2.9,3.6,1.3\r\nversicolour,6.7,3.1,4.4,1.4\r\nversicolour,5.6,3,4.5,1.5\r\nversicolour,5.8,2.7,4.1,1\r\nversicolour,6.2,2.2,4.5,1.5\r\nversicolour,5.6,2.5,3.9,1.1\r\nversicolour,5.9,3.2,4.8,1.8\r\nversicolour,6.1,2.8,4,1.3\r\nversicolour,6.3,2.5,4.9,1.5\r\nversicolour,6.1,2.8,4.7,1.2\r\nversicolour,6.4,2.9,4.3,1.3\r\nversicolour,6.6,3,4.4,1.4\r\nversicolour,6.8,2.8,4.8,1.4\r\nversicolour,6.7,3,5,1.7\r\nversicolour,6,2.9,4.5,1.5\r\nversicolour,5.7,2.6,3.5,1\r\nversicolour,5.5,2.4,3.8,1.1\r\nversicolour,5.5,2.4,3.7,1\r\nversicolour,5.8,2.7,3.9,1.2\r\nversicolour,6,2.7,5.1,1.6\r\nversicolour,5.4,3,4.5,1.5\r\nversicolour,6,3.4,4.5,1.6\r\nversicolour,6.7,3.1,4.7,1.5\r\nversicolour,6.3,2.3,4.4,1.3\r\nversicolour,5.6,3,4.1,1.3\r\nversicolour,5.5,2.5,4,1.3\r\nversicolour,5.5,2.6,4.4,1.2\r\nversicolour,6.1,3,4.6,1.4\r\nversicolour,5.8,2.6,4,1.2\r\nversicolour,5,2.3,3.3,1\r\nversicolour,5.6,2.7,4.2,1.3\r\nversicolour,5.7,3,4.2,1.2\r\nversicolour,5.7,2.9,4.2,1.3\r\nversicolour,6.2,2.9,4.3,1.3\r\nversicolour,5.1,2.5,3,1.1\r\nversicolour,5.7,2.8,4.1,1.3\r\nvirginica,6.3,3.3,6,2.5\r\nvirginica,5.8,2.7,5.1,1.9\r\nvirginica,7.1,3,5.9,2.1\r\nvirginica,6.3,2.9,5.6,1.8\r\nvirginica,6.5,3,5.8,2.2\r\nvirginica,7.6,3,6.6,2.1\r\nvirginica,4.9,2.5,4.5,1.7\r\nvirginica,7.3,2.9,6.3,1.8\r\nvirginica,6.7,2.5,5.8,1.8\r\nvirginica,7.2,3.6,6.1,2.5\r\nvirginica,6.5,3.2,5.1,2\r\nvirginica,6.4,2.7,5.3,1.9\r\nvirginica,6.8,3,5.5,2.1\r\nvirginica,5.7,2.5,5,2\r\nvirginica,5.8,2.8,5.1,2.4\r\nvirginica,6.4,3.2,5.3,2.3\r\nvirginica,6.5,3,5.5,1.8\r\nvirginica,7.7,3.8,6.7,2.2\r\nvirginica,7.7,2.6,6.9,2.3\r\nvirginica,6,2.2,5,1.5\r\nvirginica,6.9,3.2,5.7,2.3\r\nvirginica,5.6,2.8,4.9,2\r\nvirginica,7.7,2.8,6.7,2\r\nvirginica,6.3,2.7,4.9,1.8\r\nvirginica,6.7,3.3,5.7,2.1\r\nvirginica,7.2,3.2,6,1.8\r\nvirginica,6.2,2.8,4.8,1.8\r\nvirginica,6.1,3,4.9,1.8\r\nvirginica,6.4,2.8,5.6,2.1\r\nvirginica,7.2,3,5.8,1.6\r\nvirginica,7.4,2.8,6.1,1.9\r\nvirginica,7.9,3.8,6.4,2\r\nvirginica,6.4,2.8,5.6,2.2\r\nvirginica,6.3,2.8,5.1,1.5\r\nvirginica,6.1,2.6,5.6,1.4\r\nvirginica,7.7,3,6.1,2.3\r\nvirginica,6.3,3.4,5.6,2.4\r\nvirginica,6.4,3.1,5.5,1.8\r\nvirginica,6,3,4.8,1.8\r\nvirginica,6.9,3.1,5.4,2.1\r\nvirginica,6.7,3.1,5.6,2.4\r\nvirginica,6.9,3.1,5.1,2.3\r\nvirginica,5.8,2.7,5.1,1.9\r\nvirginica,6.8,3.2,5.9,2.3\r\nvirginica,6.7,3.3,5.7,2.5\r\nvirginica,6.7,3,5.2,2.3\r\nvirginica,6.3,2.5,5,1.9\r\nvirginica,6.5,3,5.2,2\r\nvirginica,6.2,3.4,5.4,2.3\r\nvirginica,5.9,3,5.1,1.8\r\n"
+				},
+				"url": {
+					"raw": "https://ml.nexosis.com/v1/data/iris",
+					"protocol": "https",
+					"host": [
+						"ml",
+						"nexosis",
+						"com"
+					],
+					"path": [
+						"v1",
+						"data",
+						"iris"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create Classification Model",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "api-key",
+						"value": "{{NEXOSIS_API_KEY}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"dataSourceName\": \"iris\",\n  \"predictionDomain\": \"classification\",\n  \"targetColumn\": \"iris\"\n}\n"
+				},
+				"url": {
+					"raw": "https://ml.nexosis.com/v1/sessions/model",
+					"protocol": "https",
+					"host": [
+						"ml",
+						"nexosis",
+						"com"
+					],
+					"path": [
+						"v1",
+						"sessions",
+						"model"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Session Status",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "api-key",
+						"value": "{{NEXOSIS_API_KEY}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://ml.nexosis.com/v1/sessions/01601444-e76c-4d06-8566-d59020a1cc61",
+					"protocol": "https",
+					"host": [
+						"ml",
+						"nexosis",
+						"com"
+					],
+					"path": [
+						"v1",
+						"sessions",
+						"01601444-e76c-4d06-8566-d59020a1cc61"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Session Results",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "api-key",
+						"value": "{{NEXOSIS_API_KEY}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://ml.nexosis.com/v1/sessions/01601444-e76c-4d06-8566-d59020a1cc61/results",
+					"protocol": "https",
+					"host": [
+						"ml",
+						"nexosis",
+						"com"
+					],
+					"path": [
+						"v1",
+						"sessions",
+						"01601444-e76c-4d06-8566-d59020a1cc61",
+						"results"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Confusion Matrix",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "api-key",
+						"value": "{{NEXOSIS_API_KEY}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://ml.nexosis.com/v1/sessions/01601444-e76c-4d06-8566-d59020a1cc61/results/confusionmatrix",
+					"protocol": "https",
+					"host": [
+						"ml",
+						"nexosis",
+						"com"
+					],
+					"path": [
+						"v1",
+						"sessions",
+						"01601444-e76c-4d06-8566-d59020a1cc61",
+						"results",
+						"confusionmatrix"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Model",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "api-key",
+						"value": "{{NEXOSIS_API_KEY}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://ml.nexosis.com/v1/models/1fa65880-451b-429c-a4f0-25c6a1545c88",
+					"protocol": "https",
+					"host": [
+						"ml",
+						"nexosis",
+						"com"
+					],
+					"path": [
+						"v1",
+						"models",
+						"1fa65880-451b-429c-a4f0-25c6a1545c88"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Predict",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "api-key",
+						"value": "{{NEXOSIS_API_KEY}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n  \"data\": [{\n\t\"sepal_len\": \"5.1\",\n\t\"sepal_width\": \"3.5\",\n\t\"petal_len\": \"1.4\",\n\t\"petal_width\": \"0.2\"\n  }]\n}"
+				},
+				"url": {
+					"raw": "https://ml.nexosis.com/v1/models/1fa65880-451b-429c-a4f0-25c6a1545c88/predict",
+					"protocol": "https",
+					"host": [
+						"ml",
+						"nexosis",
+						"com"
+					],
+					"path": [
+						"v1",
+						"models",
+						"1fa65880-451b-429c-a4f0-25c6a1545c88",
+						"predict"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
