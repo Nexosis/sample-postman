@@ -1,0 +1,173 @@
+{
+	"info": {
+		"name": "Nexosis Sessions",
+		"_postman_id": "9f79d710-ddbf-7821-183f-0c20484e14bd",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List Sessions",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "api-key",
+						"value": "{{api-key}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://ml.nexosis.com/v1/sessions",
+					"protocol": "https",
+					"host": [
+						"ml",
+						"nexosis",
+						"com"
+					],
+					"path": [
+						"v1",
+						"sessions"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Session",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "api-key",
+						"value": "{{api-key}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://ml.nexosis.com/v1/sessions/{{session-id}}",
+					"protocol": "https",
+					"host": [
+						"ml",
+						"nexosis",
+						"com"
+					],
+					"path": [
+						"v1",
+						"sessions",
+						"{{session-id}}"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Session Status",
+			"request": {
+				"method": "HEAD",
+				"header": [
+					{
+						"key": "api-key",
+						"value": "{{api-key}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://ml.nexosis.com/v1/sessions/{{session-id}}",
+					"protocol": "https",
+					"host": [
+						"ml",
+						"nexosis",
+						"com"
+					],
+					"path": [
+						"v1",
+						"sessions",
+						"{{session-id}}"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Session",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "api-key",
+						"value": "{{api-key}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://ml.nexosis.com/v1/sessions/{{session-id}}",
+					"protocol": "https",
+					"host": [
+						"ml",
+						"nexosis",
+						"com"
+					],
+					"path": [
+						"v1",
+						"sessions",
+						"{{session-id}}"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Sessions",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "api-key",
+						"value": "{{api-key}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://ml.nexosis.com/v1/sessions",
+					"protocol": "https",
+					"host": [
+						"ml",
+						"nexosis",
+						"com"
+					],
+					"path": [
+						"v1",
+						"sessions"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

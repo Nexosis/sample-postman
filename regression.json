@@ -7,71 +7,13 @@
 	},
 	"item": [
 		{
-			"name": "Get MPG Data",
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "api-key",
-						"value": "{{NEXOSIS_API_KEY}}"
-					}
-				],
-				"body": {},
-				"url": {
-					"raw": "https://ml.nexosis.com/v1/data/mpg",
-					"protocol": "https",
-					"host": [
-						"ml",
-						"nexosis",
-						"com"
-					],
-					"path": [
-						"v1",
-						"data",
-						"mpg"
-					]
-				},
-				"description": null
-			},
-			"response": []
-		},
-		{
-			"name": "Clear MPG Data",
-			"request": {
-				"method": "DELETE",
-				"header": [
-					{
-						"key": "api-key",
-						"value": "{{NEXOSIS_API_KEY}}"
-					}
-				],
-				"body": {},
-				"url": {
-					"raw": "https://ml.nexosis.com/v1/data/mpg",
-					"protocol": "https",
-					"host": [
-						"ml",
-						"nexosis",
-						"com"
-					],
-					"path": [
-						"v1",
-						"data",
-						"mpg"
-					]
-				},
-				"description": null
-			},
-			"response": []
-		},
-		{
 			"name": "Load MPG Data",
 			"request": {
 				"method": "PUT",
 				"header": [
 					{
 						"key": "api-key",
-						"value": "{{NEXOSIS_API_KEY}}"
+						"value": "{{api-key}}"
 					},
 					{
 						"key": "Content-Type",
@@ -101,13 +43,71 @@
 			"response": []
 		},
 		{
+			"name": "Get MPG Data",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "api-key",
+						"value": "{{api-key}}"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://ml.nexosis.com/v1/data/mpg",
+					"protocol": "https",
+					"host": [
+						"ml",
+						"nexosis",
+						"com"
+					],
+					"path": [
+						"v1",
+						"data",
+						"mpg"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "Clear MPG Data",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "api-key",
+						"value": "{{api-key}}"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://ml.nexosis.com/v1/data/mpg",
+					"protocol": "https",
+					"host": [
+						"ml",
+						"nexosis",
+						"com"
+					],
+					"path": [
+						"v1",
+						"data",
+						"mpg"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
 			"name": "Create Regression  Model",
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "api-key",
-						"value": "{{NEXOSIS_API_KEY}}"
+						"value": "{{api-key}}"
 					},
 					{
 						"key": "Content-Type",
@@ -137,46 +137,13 @@
 			"response": []
 		},
 		{
-			"name": "Session Status",
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "api-key",
-						"value": "{{NEXOSIS_API_KEY}}"
-					},
-					{
-						"key": "Content-Type",
-						"value": "application/json"
-					}
-				],
-				"body": {},
-				"url": {
-					"raw": "https://ml.nexosis.com/v1/sessions/0160133a-c34f-4778-b703-10f594ec9c7e",
-					"protocol": "https",
-					"host": [
-						"ml",
-						"nexosis",
-						"com"
-					],
-					"path": [
-						"v1",
-						"sessions",
-						"0160133a-c34f-4778-b703-10f594ec9c7e"
-					]
-				},
-				"description": ""
-			},
-			"response": []
-		},
-		{
 			"name": "Session Results",
 			"request": {
 				"method": "GET",
 				"header": [
 					{
 						"key": "api-key",
-						"value": "{{NEXOSIS_API_KEY}}"
+						"value": "{{api-key}}"
 					},
 					{
 						"key": "Content-Type",
@@ -185,7 +152,7 @@
 				],
 				"body": {},
 				"url": {
-					"raw": "https://ml.nexosis.com/v1/sessions/0160133a-c34f-4778-b703-10f594ec9c7e/results",
+					"raw": "https://ml.nexosis.com/v1/sessions/{{session-id}}/results",
 					"protocol": "https",
 					"host": [
 						"ml",
@@ -195,7 +162,7 @@
 					"path": [
 						"v1",
 						"sessions",
-						"0160133a-c34f-4778-b703-10f594ec9c7e",
+						"{{session-id}}",
 						"results"
 					]
 				},
@@ -210,7 +177,7 @@
 				"header": [
 					{
 						"key": "api-key",
-						"value": "{{NEXOSIS_API_KEY}}"
+						"value": "{{api-key}}"
 					},
 					{
 						"key": "Content-Type",
@@ -219,7 +186,7 @@
 				],
 				"body": {},
 				"url": {
-					"raw": "https://ml.nexosis.com/v1/models/7369be95-4238-4989-bf7e-073d5bdc64fe",
+					"raw": "https://ml.nexosis.com/v1/models/{{model-id}}",
 					"protocol": "https",
 					"host": [
 						"ml",
@@ -229,7 +196,7 @@
 					"path": [
 						"v1",
 						"models",
-						"7369be95-4238-4989-bf7e-073d5bdc64fe"
+						"{{model-id}}"
 					]
 				},
 				"description": ""
@@ -243,7 +210,7 @@
 				"header": [
 					{
 						"key": "api-key",
-						"value": "{{NEXOSIS_API_KEY}}"
+						"value": "{{api-key}}"
 					},
 					{
 						"key": "Content-Type",
@@ -252,10 +219,10 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"data\": [{\n      \"Cylinders\": 4,\n      \"Displacement\": 125,\n      \"Horsepower\": 100,\n      \"Weight\": 2568,\n      \"Acceleration\": 17,\n      \"ModelYear\": 73,\n      \"Origin\": 3,\n      \"Make\": \"honda\"\n  }]\n}"
+					"raw": "{\n  \"data\": [{\n      \"Cylinders\": 4,\n      \"Displacement\": 125,\n      \"Horsepower\": 100,\n      \"Weight\": 2568,\n      \"Acceleration\": 17,\n      \"ModelYear\": 73,\n      \"Origin\": 3,\n      \"Make\": \"honda\"\n  },{\n      \"Cylinders\": 6,\n      \"Displacement\": 125,\n      \"Horsepower\": 100,\n      \"Weight\": 2568,\n      \"Acceleration\": 17,\n      \"ModelYear\": 73,\n      \"Origin\": 3,\n      \"Make\": \"honda\"\n  },{\n      \"Cylinders\": 8,\n      \"Displacement\": 125,\n      \"Horsepower\": 100,\n      \"Weight\": 2568,\n      \"Acceleration\": 17,\n      \"ModelYear\": 73,\n      \"Origin\": 3,\n      \"Make\": \"honda\"\n  }]\n}"
 				},
 				"url": {
-					"raw": "https://ml.nexosis.com/v1/models/7369be95-4238-4989-bf7e-073d5bdc64fe/predict",
+					"raw": "https://ml.nexosis.com/v1/models/{{model-id}}/predict",
 					"protocol": "https",
 					"host": [
 						"ml",
@@ -265,7 +232,7 @@
 					"path": [
 						"v1",
 						"models",
-						"7369be95-4238-4989-bf7e-073d5bdc64fe",
+						"{{model-id}}",
 						"predict"
 					]
 				},
