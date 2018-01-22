@@ -1,7 +1,7 @@
 {
 	"info": {
 		"name": "Nexosis Regresssion",
-		"_postman_id": "26fa4b14-98ed-cfc3-827c-313c868413c2",
+		"_postman_id": "e89d5777-f9e3-44ac-7247-a2116a937270",
 		"description": "",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -37,8 +37,7 @@
 						"data",
 						"mpg"
 					]
-				},
-				"description": ""
+				}
 			},
 			"response": []
 		},
@@ -52,7 +51,10 @@
 						"value": "{{api-key}}"
 					}
 				],
-				"body": {},
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
 				"url": {
 					"raw": "https://ml.nexosis.com/v1/data/mpg",
 					"protocol": "https",
@@ -66,8 +68,7 @@
 						"data",
 						"mpg"
 					]
-				},
-				"description": null
+				}
 			},
 			"response": []
 		},
@@ -81,7 +82,10 @@
 						"value": "{{api-key}}"
 					}
 				],
-				"body": {},
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
 				"url": {
 					"raw": "https://ml.nexosis.com/v1/data/mpg",
 					"protocol": "https",
@@ -95,13 +99,12 @@
 						"data",
 						"mpg"
 					]
-				},
-				"description": null
+				}
 			},
 			"response": []
 		},
 		{
-			"name": "Create Regression  Model",
+			"name": "Create Regression Model - MPG",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -116,7 +119,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"dataSourceName\": \"MPG\",\n  \"predictionDomain\": \"Regression\"\n}"
+					"raw": "{\n  \"dataSourceName\": \"mpg\",\n  \"predictionDomain\": \"regression\"\n}"
 				},
 				"url": {
 					"raw": "https://ml.nexosis.com/v1/sessions/model",
@@ -131,13 +134,12 @@
 						"sessions",
 						"model"
 					]
-				},
-				"description": ""
+				}
 			},
 			"response": []
 		},
 		{
-			"name": "Session Results",
+			"name": "Session Results - MPG",
 			"request": {
 				"method": "GET",
 				"header": [
@@ -152,7 +154,7 @@
 				],
 				"body": {},
 				"url": {
-					"raw": "https://ml.nexosis.com/v1/sessions/{{session-id}}/results",
+					"raw": "https://ml.nexosis.com/v1/sessions/{{regression-mpg-session-id}}/results",
 					"protocol": "https",
 					"host": [
 						"ml",
@@ -162,16 +164,15 @@
 					"path": [
 						"v1",
 						"sessions",
-						"{{session-id}}",
+						"{{regression-mpg-session-id}}",
 						"results"
 					]
-				},
-				"description": ""
+				}
 			},
 			"response": []
 		},
 		{
-			"name": "Get Model",
+			"name": "Get Model - MPG",
 			"request": {
 				"method": "GET",
 				"header": [
@@ -186,7 +187,7 @@
 				],
 				"body": {},
 				"url": {
-					"raw": "https://ml.nexosis.com/v1/models/{{model-id}}",
+					"raw": "https://ml.nexosis.com/v1/models/{{regression-mpg-model-id}}",
 					"protocol": "https",
 					"host": [
 						"ml",
@@ -196,15 +197,14 @@
 					"path": [
 						"v1",
 						"models",
-						"{{model-id}}"
+						"{{regression-mpg-model-id}}"
 					]
-				},
-				"description": ""
+				}
 			},
 			"response": []
 		},
 		{
-			"name": "Predict",
+			"name": "Predict - MPG",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -222,7 +222,7 @@
 					"raw": "{\n  \"data\": [{\n      \"Cylinders\": 4,\n      \"Displacement\": 125,\n      \"Horsepower\": 100,\n      \"Weight\": 2568,\n      \"Acceleration\": 17,\n      \"ModelYear\": 73,\n      \"Origin\": 3,\n      \"Make\": \"honda\"\n  },{\n      \"Cylinders\": 6,\n      \"Displacement\": 125,\n      \"Horsepower\": 100,\n      \"Weight\": 2568,\n      \"Acceleration\": 17,\n      \"ModelYear\": 73,\n      \"Origin\": 3,\n      \"Make\": \"honda\"\n  },{\n      \"Cylinders\": 8,\n      \"Displacement\": 125,\n      \"Horsepower\": 100,\n      \"Weight\": 2568,\n      \"Acceleration\": 17,\n      \"ModelYear\": 73,\n      \"Origin\": 3,\n      \"Make\": \"honda\"\n  }]\n}"
 				},
 				"url": {
-					"raw": "https://ml.nexosis.com/v1/models/{{model-id}}/predict",
+					"raw": "https://ml.nexosis.com/v1/models/{{regression-mpg-model-id}}/predict",
 					"protocol": "https",
 					"host": [
 						"ml",
@@ -232,11 +232,146 @@
 					"path": [
 						"v1",
 						"models",
-						"{{model-id}}",
+						"{{regression-mpg-model-id}}",
 						"predict"
 					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Regression  Model - Displacement",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "api-key",
+						"value": "{{api-key}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"dataSourceName\": \"mpg\",\n  \"predictionDomain\": \"regression\",\n  \"targetColumn\": \"SalePrice\",\n  \"columns\": {\n    \"MPG\": {\n      \"datatype\": \"numericMeasure\",\n      \"role\": \"target\"\n    },\n    \"Cylinders\": {\n      \"datatype\": \"numericMeasure\",\n      \"role\": \"feature\"\n    },\n    \"Displacement\": {\n      \"datatype\": \"numericMeasure\",\n      \"role\": \"feature\"\n    },\n    \"Horsepower\": {\n      \"datatype\": \"numericMeasure\",\n      \"role\": \"feature\"\n    },\n    \"Weight\": {\n      \"datatype\": \"numericMeasure\",\n      \"role\": \"feature\"\n    },\n    \"Acceleration\": {\n      \"datatype\": \"numericMeasure\",\n      \"role\": \"feature\"\n    },\n    \"ModelYear\": {\n      \"datatype\": \"string\",\n      \"role\": \"feature\",\n      \"imputation\": \"mode\"\n    },\n    \"Origin\": {\n      \"datatype\": \"numeric\",\n      \"role\": \"feature\",\n      \"imputation\": \"mode\"\n    },\n    \"Name\": {\n      \"datatype\": \"string\",\n      \"role\": \"none\"\n    },\n    \"Make\": {\n      \"datatype\": \"string\",\n      \"role\": \"feature\"\n    }\n  }\n}"
 				},
-				"description": ""
+				"url": {
+					"raw": "https://ml.nexosis.com/v1/sessions/model",
+					"protocol": "https",
+					"host": [
+						"ml",
+						"nexosis",
+						"com"
+					],
+					"path": [
+						"v1",
+						"sessions",
+						"model"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Session Results - Displacement",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "api-key",
+						"value": "{{api-key}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://ml.nexosis.com/v1/sessions/{{regression-displacement-session-id}}/results",
+					"protocol": "https",
+					"host": [
+						"ml",
+						"nexosis",
+						"com"
+					],
+					"path": [
+						"v1",
+						"sessions",
+						"{{regression-displacement-session-id}}",
+						"results"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Model - Displacement",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "api-key",
+						"value": "{{api-key}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://ml.nexosis.com/v1/models/{{regression-displacement-model-id}}",
+					"protocol": "https",
+					"host": [
+						"ml",
+						"nexosis",
+						"com"
+					],
+					"path": [
+						"v1",
+						"models",
+						"{{regression-displacement-model-id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Predict - Displacement",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "api-key",
+						"value": "{{api-key}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [{\n      \"Cylinders\": 4,\n      \"Displacement\": 125,\n      \"Horsepower\": 100,\n      \"Weight\": 2568,\n      \"Acceleration\": 17,\n      \"ModelYear\": 73,\n      \"Origin\": 3,\n      \"Make\": \"honda\"\n  },{\n      \"Cylinders\": 6,\n      \"Displacement\": 125,\n      \"Horsepower\": 100,\n      \"Weight\": 2568,\n      \"Acceleration\": 17,\n      \"ModelYear\": 73,\n      \"Origin\": 3,\n      \"Make\": \"honda\"\n  },{\n      \"Cylinders\": 8,\n      \"Displacement\": 125,\n      \"Horsepower\": 100,\n      \"Weight\": 2568,\n      \"Acceleration\": 17,\n      \"ModelYear\": 73,\n      \"Origin\": 3,\n      \"Make\": \"honda\"\n  }]\n}"
+				},
+				"url": {
+					"raw": "https://ml.nexosis.com/v1/models/{{regression-displacement-model-id}}/predict",
+					"protocol": "https",
+					"host": [
+						"ml",
+						"nexosis",
+						"com"
+					],
+					"path": [
+						"v1",
+						"models",
+						"{{regression-displacement-model-id}}",
+						"predict"
+					]
+				}
 			},
 			"response": []
 		}
