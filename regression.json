@@ -1,7 +1,7 @@
 {
 	"info": {
 		"name": "Nexosis Regresssion",
-		"_postman_id": "e89d5777-f9e3-44ac-7247-a2116a937270",
+		"_postman_id": "e6b67075-763a-8dbd-6868-9ce32cd882d5",
 		"description": "",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -152,7 +152,10 @@
 						"value": "application/json"
 					}
 				],
-				"body": {},
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
 				"url": {
 					"raw": "https://ml.nexosis.com/v1/sessions/{{regression-mpg-session-id}}/results",
 					"protocol": "https",
@@ -185,7 +188,10 @@
 						"value": "application/json"
 					}
 				],
-				"body": {},
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
 				"url": {
 					"raw": "https://ml.nexosis.com/v1/models/{{regression-mpg-model-id}}",
 					"protocol": "https",
@@ -255,7 +261,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"dataSourceName\": \"mpg\",\n  \"predictionDomain\": \"regression\",\n  \"targetColumn\": \"SalePrice\",\n  \"columns\": {\n    \"MPG\": {\n      \"datatype\": \"numericMeasure\",\n      \"role\": \"target\"\n    },\n    \"Cylinders\": {\n      \"datatype\": \"numericMeasure\",\n      \"role\": \"feature\"\n    },\n    \"Displacement\": {\n      \"datatype\": \"numericMeasure\",\n      \"role\": \"feature\"\n    },\n    \"Horsepower\": {\n      \"datatype\": \"numericMeasure\",\n      \"role\": \"feature\"\n    },\n    \"Weight\": {\n      \"datatype\": \"numericMeasure\",\n      \"role\": \"feature\"\n    },\n    \"Acceleration\": {\n      \"datatype\": \"numericMeasure\",\n      \"role\": \"feature\"\n    },\n    \"ModelYear\": {\n      \"datatype\": \"string\",\n      \"role\": \"feature\",\n      \"imputation\": \"mode\"\n    },\n    \"Origin\": {\n      \"datatype\": \"numeric\",\n      \"role\": \"feature\",\n      \"imputation\": \"mode\"\n    },\n    \"Name\": {\n      \"datatype\": \"string\",\n      \"role\": \"none\"\n    },\n    \"Make\": {\n      \"datatype\": \"string\",\n      \"role\": \"feature\"\n    }\n  }\n}"
+					"raw": "{\n  \"dataSourceName\": \"mpg\",\n  \"predictionDomain\": \"regression\",\n  \"targetColumn\": \"Displacement\",\n  \"columns\": {\n    \"MPG\": {\n      \"datatype\": \"numericMeasure\",\n      \"role\": \"feature\"\n    },\n    \"Cylinders\": {\n      \"datatype\": \"numericMeasure\",\n      \"role\": \"feature\"\n    },\n    \"Displacement\": {\n      \"datatype\": \"numericMeasure\",\n      \"role\": \"target\"\n    },\n    \"Horsepower\": {\n      \"datatype\": \"numericMeasure\",\n      \"role\": \"feature\"\n    },\n    \"Weight\": {\n      \"datatype\": \"numericMeasure\",\n      \"role\": \"feature\"\n    },\n    \"Acceleration\": {\n      \"datatype\": \"numericMeasure\",\n      \"role\": \"feature\"\n    },\n    \"ModelYear\": {\n      \"datatype\": \"string\",\n      \"role\": \"feature\",\n      \"imputation\": \"mode\"\n    },\n    \"Origin\": {\n      \"datatype\": \"numeric\",\n      \"role\": \"feature\",\n      \"imputation\": \"mode\"\n    },\n    \"Name\": {\n      \"datatype\": \"string\",\n      \"role\": \"none\"\n    },\n    \"Make\": {\n      \"datatype\": \"string\",\n      \"role\": \"feature\"\n    }\n  }\n}"
 				},
 				"url": {
 					"raw": "https://ml.nexosis.com/v1/sessions/model",
@@ -288,7 +294,10 @@
 						"value": "application/json"
 					}
 				],
-				"body": {},
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
 				"url": {
 					"raw": "https://ml.nexosis.com/v1/sessions/{{regression-displacement-session-id}}/results",
 					"protocol": "https",
@@ -321,7 +330,10 @@
 						"value": "application/json"
 					}
 				],
-				"body": {},
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
 				"url": {
 					"raw": "https://ml.nexosis.com/v1/models/{{regression-displacement-model-id}}",
 					"protocol": "https",
@@ -355,7 +367,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"data\": [{\n      \"Cylinders\": 4,\n      \"Displacement\": 125,\n      \"Horsepower\": 100,\n      \"Weight\": 2568,\n      \"Acceleration\": 17,\n      \"ModelYear\": 73,\n      \"Origin\": 3,\n      \"Make\": \"honda\"\n  },{\n      \"Cylinders\": 6,\n      \"Displacement\": 125,\n      \"Horsepower\": 100,\n      \"Weight\": 2568,\n      \"Acceleration\": 17,\n      \"ModelYear\": 73,\n      \"Origin\": 3,\n      \"Make\": \"honda\"\n  },{\n      \"Cylinders\": 8,\n      \"Displacement\": 125,\n      \"Horsepower\": 100,\n      \"Weight\": 2568,\n      \"Acceleration\": 17,\n      \"ModelYear\": 73,\n      \"Origin\": 3,\n      \"Make\": \"honda\"\n  }]\n}"
+					"raw": "{\n  \"data\": [{\n      \"Cylinders\": 4,\n      \"MPG\": 20,\n      \"Horsepower\": 100,\n      \"Weight\": 2568,\n      \"Acceleration\": 17,\n      \"ModelYear\": 73,\n      \"Origin\": 3,\n      \"Make\": \"honda\"\n  },{\n      \"Cylinders\": 6,\n      \"MPG\": 22,\n      \"Horsepower\": 100,\n      \"Weight\": 2568,\n      \"Acceleration\": 17,\n      \"ModelYear\": 73,\n      \"Origin\": 3,\n      \"Make\": \"honda\"\n  },{\n      \"Cylinders\": 8,\n      \"MPG\": 24,\n      \"Horsepower\": 100,\n      \"Weight\": 2568,\n      \"Acceleration\": 17,\n      \"ModelYear\": 73,\n      \"Origin\": 3,\n      \"Make\": \"honda\"\n  }]\n}"
 				},
 				"url": {
 					"raw": "https://ml.nexosis.com/v1/models/{{regression-displacement-model-id}}/predict",
